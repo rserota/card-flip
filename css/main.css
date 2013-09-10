@@ -1,0 +1,38 @@
+/*
+	Put your custom CSS here
+*/
+.secondary {
+	position:absolute;
+    top: 0px;
+
+    -webkit-transform:rotateY(180deg);
+  
+}
+
+.secondary:hover {
+	-webkit-transform:rotateY(0deg);    
+}
+
+
+.primary {
+
+	-webkit-transform:rotateY(0deg);
+
+
+}
+
+.portfolio-item .primary {
+	transition:-webkit-transform 2s;
+}
+.portfolio-item:hover .primary {
+	-webkit-transform:rotateY(-180deg);
+
+}
+
+.portfolio-item:hover .secondary {
+	-webkit-transform:rotateY(0deg);
+}
+
+.portfolio-item .secondary {
+	transition:-webkit-transform 2s;
+}
